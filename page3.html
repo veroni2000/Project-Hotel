@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Хотел Слънце Бургас</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="css/images/logo.png" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="page1.html">НAЧАЛО</a></li>
+				<li><a href="page2.html">НАСТАНЯВАНЕ</a></li>
+				<li><a href="page3.html">РЕЗЕРВАЦИЯ</a></li>
+				<li><a href="page4.html">ГАЛЕРИЯ</a></li>
+				<li><a href="page5.html">МЕСТОПОЛОЖЕНИЕ</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Форма за резервация</h1>
+		<form method="post" action="send.php">
+			<div class="top">
+				<p>Име:</p>
+				<input type="text" name="ime" placeholder="Въведете име">
+			</div>
+			<div class="top">
+				<p>Email:</p>
+				<input type="email" name="email" placeholder="Въведете имейл">
+			</div>
+			<div class="top">
+				<p>Телефон:</p>
+				<input type="tel" name="telefon" placeholder="Въведете телефон">
+			</div>
+			<div class="middle">
+				<p>Пристигане:</p>
+				<input type="date" name="pristigane">
+			</div>
+			<div class="middle">
+				<p>Заминаване:</p>
+				<input type="date" name="zaminavane">
+			</div>
+			<div class="middle">
+				<p>Възрастни:</p>
+				<select name="vuzrastni">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="middle">
+				<p>Деца:</p>
+				<select name="deca">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="bottom">
+				<label for="1staya">Единична стая</label>
+				<input id="1staya" type="radio" name="radio">
+				<label for="2staya">Двойна стая</label>
+				<input id="2staya" type="radio" name="radio">
+				<label for="ap1">Малък апартамент</label>
+				<input id="ap1" type="radio" name="radio">
+				<label for="ap2">Голям апартамент</label>
+				<input id="ap2" type="radio" name="radio"><br>
+				<label for="zakuska">Закуска</label>
+				<input id="zakuska" type="checkbox" name="zakuska">
+				<label for="obyad">Обяд</label>
+				<input id="obyad" type="checkbox" name="obyad">
+				<label for="vecherya">Вечеря</label>
+				<input id="vecherya" type="checkbox" name="vecherya">
+			</div>
+			<input type="submit" name="rezervirai" value="РЕЗЕРВИРАЙ">
+		</form>
+		<footer>
+			All rights reserved ©
+		</footer>
+	</body>
+	</html>
